@@ -15,7 +15,15 @@ app.get('/', (req, res) => {
   })
 
   app.post('/comment', (req, res) => {
-    res.send('Got a POST request')
+   // res.send('Got a POST request')
+
+
+console.log(req.body)
+
+//addToDatabase(req.body.comment)
+res.json(req.body)
+
+
   })
   
 
